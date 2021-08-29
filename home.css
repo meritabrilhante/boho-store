@@ -2,7 +2,7 @@
 /*transferi para a página global.css todas as estilizações que serão utilizadas nas duas páginas para evitar a duplicação de código, ex: container, nav, reset, buttons, footer*/
 
 .banner {
-    width: 100vw;
+    width: 100%;
     margin-bottom: 40px;
 }
 
