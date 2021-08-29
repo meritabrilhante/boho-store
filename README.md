@@ -23,7 +23,7 @@ Para a responsividade foi utilizado os grids e tamanhos de containers do Bootstr
 
 ## 👩 Ccontributors 
 
-Isamara Galvão - Desenvolveu todo o HTML e estilizou o projeto com CSS; 
+Isamara Galvão - Desenvolveu todo o HTML e estilizou o projeto com CSS;<br>
 Rita Brilhante - Desenvolveu a lógica e as funções Javascript; 
 
 ## 👨‍💻 Technologies
