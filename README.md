@@ -10,16 +10,16 @@ A proposta é o desenvolvimento de um site que utilize conceitos de HTML, CSS e 
 
 ## 💻 Project
 
-Um e-commerce desenvolvido em HTML e estilizado em CSS que altera o conteúdo das páginas dinamicamente atráves do Javascript. 
-Os conceitos de CSS que escolhemos para nortear a estilização do site são flexbox e grid. 
-As informações dos produtos estão armazenadas em memória, sendo um array de categorias, onde cada categoria possui um array de produtos. 
-Os produtos são listados atráves uma iteração nesse array.
-Dentro do HTML são marcadas através de ID, as tags para onde serão enviadas as informações desses produtos. 
-Essas informações são armazenadas a partir do clique, no sessionstorage do navegador como strings (utilizando o JSON Stringy que transforma objetos js para strings) e enviados para a tela de produto. 
-Na tela de produto, foi criada uma verificação para a forma de pagamento selecionada, onde dependendo de qual input está ativo, será mostrado suas respectivas informações. 
-Além disso, também foi criada uma newsletter, que armazena o email no localstorage. 
+Um e-commerce desenvolvido em HTML e estilizado em CSS que altera o conteúdo das páginas dinamicamente atráves do Javascript.<br>
+Os conceitos de CSS que escolhemos para nortear a estilização do site são flexbox e grid.<br>
+As informações dos produtos estão armazenadas em memória, sendo um array de categorias, onde cada categoria possui um array de produtos.<br> 
+Os produtos são listados atráves uma iteração nesse array.<br>
+Dentro do HTML são marcadas através de ID, as tags para onde serão enviadas as informações desses produtos.<br>
+Essas informações são armazenadas a partir do clique, no sessionstorage do navegador como strings (utilizando o JSON Stringy que transforma objetos js para strings) e enviados para a tela de produto.<br> 
+Na tela de produto, foi criada uma verificação para a forma de pagamento selecionada, onde dependendo de qual input está ativo, será mostrado suas respectivas informações.<br> 
+Além disso, também foi criada uma newsletter, que armazena o email no localstorage.<br> 
 
-Para a responsividade foi utilizado os grids e tamanhos de containers do Bootstrap.
+Para a responsividade foi utilizado os grids e tamanhos de containers do Bootstrap.<br>
 
 ## 👨‍💻 Technologies
 
