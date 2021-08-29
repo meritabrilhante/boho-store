@@ -97,5 +97,11 @@ legend {
 }
 
 
+@media (max-width: 768px) {
+    .grid-product {
+    grid-template-columns: 1fr;
+    }
+}
+
 
 
