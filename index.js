@@ -25,7 +25,7 @@ var categories = [
             {
                 image:'assets/products/destaques/jaqueta-rendada.png',
                 name: 'Jaqueta Rendada',
-                price:'R$ 17 9,90'
+                price:'R$ 179,90'
             },
         ]
     },
@@ -121,7 +121,6 @@ var categories = [
 html$ = '';
 for(var category of categories){
 html$ += `
-
  <h4 id=${category.title} class="title-categorie">${category.title}</h4>
 
  <div class="products">
@@ -137,11 +136,14 @@ html$ += `
                         <p class="product-price">${product.price}</p>
                     </a>               
             </div>`
-         ))
-     }
-     </div>`;
+            ))
+        }
+        </div>`;
+        
     }
 
+    
+    
     document.getElementById("productscategories").innerHTML = html$;
 
     function gotoproductpage (name, price, image, categoryname) {  
@@ -167,3 +169,10 @@ function cadastraremail() {
     window.alert('Agora você ficará por dentro das nossas novidades!')
  
  }
+
+ /* Nav Mobile */
+
+ function sidebar () {
+     document.getElementById ('sidebar').classList.toggle('opensidebar')
+ }
+

@@ -2,8 +2,12 @@
 /*transferi para a página global.css todas as estilizações que serão utilizadas nas duas páginas para evitar a duplicação de código, ex: container, nav, reset, buttons, footer*/
 
 .banner {
-    width: 100%;
+    width: 100vw;
     margin-bottom: 40px;
+}
+
+.banner > img {
+    width: 100%;
 }
 
 .banners-top {
@@ -84,6 +88,33 @@ footer{
 
 
 /*separar style por página se não, o código anterior será sobreposto */
+
+
+
+ /*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .actionsnewsletter > input {
+        width: 124px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
 
 
 
