@@ -170,9 +170,4 @@ function cadastraremail() {
  
  }
 
- /* Nav Mobile */
-
- function sidebar () {
-     document.getElementById ('sidebar').classList.toggle('opensidebar')
- }
 
