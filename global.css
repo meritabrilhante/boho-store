@@ -1,0 +1,199 @@
+* {
+    /* reset navegator presets*/
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+html {    
+    /*dentro de html vão as variáveis de cor, e font-family*/
+
+    /*colors*/
+    --black: #1b1b1b;
+    --gray: #dedede;    
+    --white: #fff;
+    --gray-dark: #707070;
+    --gray-light: #FAFAFA;
+
+    /*font-family*/
+    font-family: 'Mulish', sans-serif;
+
+    /*movimento do scroll automatico*/
+    scroll-behavior: smooth;    
+}
+
+
+body {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container-main {
+    width: 1140px;
+    margin: 0 auto;
+} 
+
+img {
+    width: 100%;
+}
+
+/*Nav Frete*/
+
+.frete{
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+}
+ 
+/* Nav-Logo Icones*/ 
+
+.mid-nav{
+    width: 100%;
+    background-color: var(--gray-light);
+    display: flex;
+    justify-content: flex-end; 
+    padding: 16px 32px;
+    align-items: center; /* alinha os itens horizontalmente*/
+}
+
+.logo {
+    width: 120px;   
+    margin: 0 auto; 
+}
+
+.icones{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.icones a img:hover {
+    opacity: .6;
+}
+
+/* Nav Categorias Pesquisa*/
+
+.categorias {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    align-items: center;
+    background-color: var(--white);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 56px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+li > a {
+    color: var(--black);
+}
+
+li > a:hover{
+    opacity: .6;
+}
+
+/*searchbar */
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
+
+}
+
+.inputs {
+    height: 40px;
+    padding: 0px 8px;
+    border: 0.8px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 4px 0px 0px 4px;
+    width: 256px;
+    margin: 0;
+} /*inputs global - utilizar a classe sempre que houver um input*/
+
+select {
+    height: 40px;
+    padding: 0px 8px;
+    border: 0.8px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 4px 0px 0px 4px;
+    width: 256px;
+    margin: 0;
+}
+
+
+.searchbar > button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--black);
+    border-radius: 0px 4px 4px 0px;
+}
+
+.searchbar button > img {
+    display: flex;
+    height: 16px;
+    width: 16px;
+}
+
+.searchbar > button:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+
+footer{
+    background-color:var(--black);
+    color:var(--white);
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* buttons */
+
+button {
+    height: 40px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    opacity: .8;
+    cursor: pointer;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boho - Roupas Femininas</title> <!--Adicionei a tag title que é o que aparece na aba do navegador-->   
+    
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="assets/favicon.png" /> <!--Icone que aparece na aba do navegador-->
+</head>
+
+
+<body>    
+    <nav> <!--Por conta da semântica, coloquei todo o conteúdo do header na tag nav que é a tag recomendada-->        
+            
+            <section class="frete">
+                    frete grátis acima de R$150 em compras
+            </section>
+        
+            <section class="mid-nav">  
+                <div class="logo">
+                    <img src="assets/logo.svg">
+                </div>
+
+                <div class="icones"> <!--Não precisa adicionar uma classe individual para cada ícone, nesse caso, somente na div que os envolve-->
+                    <a href="#"><img src="assets/icons/profile.svg" alt=""></a>
+                    <a href="#"><img src="assets/icons/heart.svg" alt=""></a>
+                    <a href="#"><img src="assets/icons/cart.svg" alt=""></a>
+                </div>
+            </section>
+          
+            <div class="container-main">
+                <section class="categorias">
+                    <ul>
+                        <li><a href="product.html">destaques</a></li>
+                        <li><a href="#Tendencias">tendências</a></li>
+                        <li><a href="#Acessórios">acessórios</a></li>
+                        <li><a href="#Sapatos">sapatos</a></li>
+                    </ul>
+
+                    <div class="searchbar">
+                        <input class="inputs" type="text" id="search" placeholder="O que você procura?">
+                        <button><img src="assets/icons/search.svg"></button>
+                    </div>
+                </section>
+            </div>               
+    </nav>
+    
+    <!--Banner Principal-->
+
+    <section class="banner">
+        <img src="assets/banners/principal-banner.png" alt="">
+    </section>
+
+    <div class="container-main">
+        <div class="banners-top"> 
+                <!--Como o grid foi alicado na classe "banners-top" não há necessidade de cada imagem ficar numa div com cada uma uma classe-->            
+                <a href="#"><img src="assets/banners/cama-banho.png" alt=""></a>           
+                <a href="#"><img src="assets/banners/decoracao.png" alt=""></a>           
+                <a href="#"><img src="assets/banners/presentes.png" alt=""></a>
+        </div>   
+    </div>
+
+     <!--Produtos-->
+     <!--Os produtos serão puxados pelo js, através de um array de objetos, por isso, o código dele vai para o outro arquivo-->
+
+     <div class="container-main">
+        <section id="productscategories" class="grid-all-products">                        
+            <section class="categorie">
+                
+                <h4 class="categorytitle">Destaques</h4>
+
+                <div class="products">
+
+                    <div class="card-product">
+
+                        <img src="assets/products/destaques/conjunto-primavera.png">
+
+                        <div class="name-favorite">
+                            <p>Nome do Produto</p>
+                            <img src="assets/icons/heart.svg">
+                        </div>
+                        
+                        <p class="product.price">R$ 18,99</p>
+                    
+                    </div>
+
+                    <div class="card-product">
+
+                        <img src="assets/products/destaques/conjunto-primavera.png">
+
+                        <div class="name-favorite">
+                            <p>Nome do Produto</p>
+                            <img src="assets/icons/heart.svg">
+                        </div>
+                        
+                        <p class="product.price">R$ 18,99</p>
+                    
+                    </div>
+
+                    <div class="card-product">
+
+                        <img src="assets/products/destaques/conjunto-primavera.png">
+
+                        <div class="name-favorite">
+                            <p>Nome do Produto</p>
+                            <img src="assets/icons/heart.svg">
+                        </div>
+                        
+                        <p class="product.price">R$ 18,99</p>
+                    
+                    </div>
+
+                    <div class="card-product">
+
+                        <img src="assets/products/destaques/conjunto-primavera.png">
+
+                        <div class="name-favorite">
+                            <p>Nome do Produto</p>
+                            <img src="assets/icons/heart.svg">
+                        </div>
+                        
+                        <p class="product.price">R$ 18,99</p>
+                    
+                    </div>
+                </div>                          
+            </section>      
+        </section>
+    </div> 
+
+    <section class="container-main">  
+
+        <div class="mid-banner">
+            <img src="assets/banners/mid-banner.png" alt="">
+        </div>
+
+        <div class="newsletter">          
+            <div class="titlenewsletter">
+                <h4>Ganhe R$ 50 na primeira compra</h4>
+                <p>Válido para compras acima de R$ 200</p>
+            </div>
+
+            <div class="actionsnewsletter">
+                <input class="inputs" type="text" placeholder="Digite seu E-mail">
+                <button class="button">cadastrar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>2021 | Desenvolvido por Isamara, Nátalia e Rita Brilhante</footer>
+
+</body>
+
+<html>

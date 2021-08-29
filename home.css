@@ -1,0 +1,83 @@
+
+/*transferi para a página global.css todas as estilizações que serão utilizadas nas duas páginas para evitar a duplicação de código, ex: container, nav, reset, buttons, footer*/
+
+.banner {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.banners-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.categorytitle {
+    font-size: 24px;
+    padding: 16px 0;
+}
+
+.name-favorite {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-favorite > p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.name-favorite > img {
+    height: 32px;
+    width: 32px;
+}
+
+.product.price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.mid-banner {
+    padding: 32px 0; 
+}
+
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:#F6F6F6;
+    align-items: center;
+    padding: 32px 16px;
+}
+
+.actionsnewsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+section.container-main {
+    padding-bottom: 68px;
+}
+
+footer{
+    padding: 20px;
+    background-color: #1B1B1B;
+    color: #FFFFFF;
+    font-size: 20px;    
+    text-align: center;
+}
+
+
+/*separar style por página se não, o código anterior será sobreposto */
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boho - Roupas Femininas</title> <!--Adicionei a tag title que é o que aparece na aba do navegador-->   
+        
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="product.css">
+        <link rel="stylesheet" type="text/css" href="global.css">
+        
+        <!--Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <!--FavIcon-->
+        <link rel="shortcut icon" href="assets/favicon.png" /> <!--Icone que aparece na aba do navegador-->
+</head>
+
+
+<body>
+
+    <nav> <!--Por conta da semântica, coloquei todo o conteúdo do header na tag nav que é a tag recomendada-->        
+            
+        <section class="frete">
+                frete grátis acima de R$150 em compras
+        </section>
+    
+        <section class="mid-nav">  
+            <div class="logo">
+                <img src="assets/logo.svg">
+            </div>
+
+            <div class="icones"> <!--Não precisa adicionar uma classe individual para cada ícone, nesse caso, somente na div que os envolve-->
+                <a href="#"><img src="assets/icons/profile.svg" alt=""></a>
+                <a href="#"><img src="assets/icons/heart.svg" alt=""></a>
+                <a href="#"><img src="assets/icons/cart.svg" alt=""></a>
+            </div>
+        </section>
+      
+        <div class="container-main">
+            <section class="categorias">
+                <ul>
+                    <li><a href="#Destaques">destaques</a></li>
+                    <li><a href="#Tendencias">tendências</a></li>
+                    <li><a href="#Acessórios">acessórios</a></li>
+                    <li><a href="#Sapatos">sapatos</a></li>
+                </ul>
+
+                <div class="searchbar">
+                    <input class="inputs" type="text" id="search" placeholder="O que você procura?">
+                    <button><img src="assets/icons/search.svg"></button>
+                </div>
+            </section>
+        </div>               
+    </nav>
+
+    <!--Breadcrumb-->
+
+    <div class="container-main">
+        <div class="breadcrumb">
+            <a href="index.html"><p>home</p></a>
+            <img src="assets/icons/chevron-right.svg">
+            <a><p>Destaques</p></a>       
+        </div>
+    </div>
+    
+    <div class="container-main">
+
+        <div class="grid-product">
+
+            <div class="foto-produto">
+                <img src="assets/products/destaques/conjunto-primavera.png" alt="Jaqueta">
+            </div>
+
+            <div class="text-product">
+            <p class="product-name">Conjunto Primavera</p>
+            <p class="product-price">R$ 259,90</p>
+           
+            <!--Formulário-->
+
+            <form action="">
+                
+                <fieldset>
+                    <label for="size" id="size">Tamanho</label>    
+                    <select name="size" id="tamanho">
+                        <option value="selecione">Selecione o tamanho</option>
+                        <option value="pp">PP</option>
+                        <option value="p">P</option>
+                        <option value="m">M</option>
+                        <option value="g">G</option>
+                        <option value="gg">GG</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="quantidade">
+
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" step="1">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+
+                    <div class="radio">
+                        <input id="avista" type="radio" name="pag" value="avista">
+                        <label for="avista"> À vista</label>
+                    </div>
+                    
+                    <p class="aviso-boleto">Se o pagamento for via boleto, poderá  demorar até 3 dias úteis para confirmação.</p>
+                    
+                    <div class="radio">
+                        <input id="parc" type="radio" name="pag" value="parc"/>
+                        <label for="parc"> Parcelado</label>
+                    </div>
+
+                    <select class="parcelas" name="parcelas" id="parc">
+                        <option value="parcelas">Selecione o número de parcelas</option>
+                        <option value="1x">1x de 259,90 sem juros</option>
+                        <option value="2x">2x de 129,95 sem juros</option>
+                        <option value="3x">3x de 86,63 sem juros</option>
+                    </select>
+
+                </fieldset>
+            
+                <div class="product-actions">
+                    <button>Adicionar ao Carrinho</button>
+                    <a><img src="assets/icons/heart.svg"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer> 2021 | Desenvolvido por Isamara, Nátalia e Rita Brilhante </footer>
+    
+</body>
+
+</html>
