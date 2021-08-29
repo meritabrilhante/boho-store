@@ -15,6 +15,9 @@
 
     <!--FavIcon-->
     <link rel="shortcut icon" href="assets/favicon.png" /> <!--Icone que aparece na aba do navegador-->
+
+    <!--Script-->
+    <script src="index.js" defer ></script> <!--A tag defer permite que o js seja executado somente após o documento ter sido todo renderizado pelo navegador -->
 </head>
 
 
@@ -27,7 +30,7 @@
         
             <section class="mid-nav">  
                 <div class="logo">
-                    <img src="assets/logo.svg">
+                    <a href="index.html"><img src="assets/logo.svg"></a>
                 </div>
 
                 <div class="icones"> <!--Não precisa adicionar uma classe individual para cada ícone, nesse caso, somente na div que os envolve-->
@@ -40,7 +43,7 @@
             <div class="container-main">
                 <section class="categorias">
                     <ul>
-                        <li><a href="product.html">destaques</a></li>
+                        <li><a href="#Destaques">destaques</a></li>
                         <li><a href="#Tendencias">tendências</a></li>
                         <li><a href="#Acessórios">acessórios</a></li>
                         <li><a href="#Sapatos">sapatos</a></li>
@@ -75,66 +78,11 @@
      <div class="container-main">
         <section id="productscategories" class="grid-all-products">                        
             <section class="categorie">
-                
-                <h4 class="categorytitle">Destaques</h4>
-
-                <div class="products">
-
-                    <div class="card-product">
-
-                        <img src="assets/products/destaques/conjunto-primavera.png">
-
-                        <div class="name-favorite">
-                            <p>Nome do Produto</p>
-                            <img src="assets/icons/heart.svg">
-                        </div>
-                        
-                        <p class="product.price">R$ 18,99</p>
-                    
-                    </div>
-
-                    <div class="card-product">
-
-                        <img src="assets/products/destaques/conjunto-primavera.png">
-
-                        <div class="name-favorite">
-                            <p>Nome do Produto</p>
-                            <img src="assets/icons/heart.svg">
-                        </div>
-                        
-                        <p class="product.price">R$ 18,99</p>
-                    
-                    </div>
-
-                    <div class="card-product">
-
-                        <img src="assets/products/destaques/conjunto-primavera.png">
-
-                        <div class="name-favorite">
-                            <p>Nome do Produto</p>
-                            <img src="assets/icons/heart.svg">
-                        </div>
-                        
-                        <p class="product.price">R$ 18,99</p>
-                    
-                    </div>
-
-                    <div class="card-product">
-
-                        <img src="assets/products/destaques/conjunto-primavera.png">
-
-                        <div class="name-favorite">
-                            <p>Nome do Produto</p>
-                            <img src="assets/icons/heart.svg">
-                        </div>
-                        
-                        <p class="product.price">R$ 18,99</p>
-                    
-                    </div>
-                </div>                          
-            </section>      
+                <!--Aqui os produtos serão gerados dinamicamente atráves do array de objetos-->
+            </section>
         </section>
-    </div> 
+    </div>
+                               
 
     <section class="container-main">  
 
@@ -149,14 +97,16 @@
             </div>
 
             <div class="actionsnewsletter">
-                <input class="inputs" type="text" placeholder="Digite seu E-mail">
-                <button class="button">cadastrar</button>
+                <input id="emailnewsletter" class="inputs" type="text" placeholder="Digite seu E-mail">
+                <button class="button" onclick="cadastraremail()">cadastrar</button>
+
+                <!--a função chamada no onclick vai armazenar o email no localstorage-->
             </div>
 
         </div>
     </section>
 
-    <footer>2021 | Desenvolvido por Isamara, Nátalia e Rita Brilhante</footer>
+    <footer>2021 | Desenvolvido por <a href="https://www.linkedin.com/in/isamarags/">Isamara</a>, <a>Nátalia</a> e <a href="https://www.linkedin.com/in/rtcstr/">Rita</a></footer>
 
 </body>
 

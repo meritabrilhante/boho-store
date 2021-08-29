@@ -10,22 +10,29 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
+    padding-bottom: 32px;
 }
 
 .products {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    margin-bottom: 32px;
 }
 
-.categorytitle {
+.title-categorie {
     font-size: 24px;
     padding: 16px 0;
+}
+
+.card-product {
+    cursor: pointer;
 }
 
 .name-favorite {
     display: flex;
     justify-content: space-between;
+    padding-top: 8px;
 }
 
 .name-favorite > p {
@@ -38,9 +45,9 @@
     width: 32px;
 }
 
-.product.price {
+.product-price {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 

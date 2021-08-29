@@ -17,6 +17,9 @@
     
         <!--FavIcon-->
         <link rel="shortcut icon" href="assets/favicon.png" /> <!--Icone que aparece na aba do navegador-->
+
+        <!--Script-->
+        <script src="product.js" defer></script>
 </head>
 
 
@@ -30,7 +33,7 @@
     
         <section class="mid-nav">  
             <div class="logo">
-                <img src="assets/logo.svg">
+                <a href="index.html"><img src="assets/logo.svg"></a>
             </div>
 
             <div class="icones"> <!--Não precisa adicionar uma classe individual para cada ícone, nesse caso, somente na div que os envolve-->
@@ -63,78 +66,18 @@
         <div class="breadcrumb">
             <a href="index.html"><p>home</p></a>
             <img src="assets/icons/chevron-right.svg">
-            <a><p>Destaques</p></a>       
+            <a><p id="categoryname">Destaques</p></a><!--Aqui o nome da categoria será alterado dinamicamente através do id-->      
         </div>
     </div>
     
     <div class="container-main">
 
-        <div class="grid-product">
-
-            <div class="foto-produto">
-                <img src="assets/products/destaques/conjunto-primavera.png" alt="Jaqueta">
-            </div>
-
-            <div class="text-product">
-            <p class="product-name">Conjunto Primavera</p>
-            <p class="product-price">R$ 259,90</p>
-           
-            <!--Formulário-->
-
-            <form action="">
-                
-                <fieldset>
-                    <label for="size" id="size">Tamanho</label>    
-                    <select name="size" id="tamanho">
-                        <option value="selecione">Selecione o tamanho</option>
-                        <option value="pp">PP</option>
-                        <option value="p">P</option>
-                        <option value="m">M</option>
-                        <option value="g">G</option>
-                        <option value="gg">GG</option>
-                    </select>
-                </fieldset>
-
-                <fieldset class="quantidade">
-
-                    <label for="quantidade">Quantidade</label>
-                    <input type="number" id="quantidade" name="quantidade" min="1" max="10" step="1">
-
-                </fieldset>
-
-                <fieldset>
-                    <legend>Forma de Pagamento</legend>
-
-                    <div class="radio">
-                        <input id="avista" type="radio" name="pag" value="avista">
-                        <label for="avista"> À vista</label>
-                    </div>
-                    
-                    <p class="aviso-boleto">Se o pagamento for via boleto, poderá  demorar até 3 dias úteis para confirmação.</p>
-                    
-                    <div class="radio">
-                        <input id="parc" type="radio" name="pag" value="parc"/>
-                        <label for="parc"> Parcelado</label>
-                    </div>
-
-                    <select class="parcelas" name="parcelas" id="parc">
-                        <option value="parcelas">Selecione o número de parcelas</option>
-                        <option value="1x">1x de 259,90 sem juros</option>
-                        <option value="2x">2x de 129,95 sem juros</option>
-                        <option value="3x">3x de 86,63 sem juros</option>
-                    </select>
-
-                </fieldset>
-            
-                <div class="product-actions">
-                    <button>Adicionar ao Carrinho</button>
-                    <a><img src="assets/icons/heart.svg"></a>
-                </div>
-            </form>
+        <div id="grid-product" class="grid-product">
+            <!--Aqui o conteúdo será alteraddo dinâmicamente-->
         </div>
     </div>
     
-    <footer> 2021 | Desenvolvido por Isamara, Nátalia e Rita Brilhante </footer>
+    <footer>2021 | Desenvolvido por <a href="https://www.linkedin.com/in/isamarags/">Isamara</a>, <a>Nátalia</a> e <a href="https://www.linkedin.com/in/rtcstr/">Rita</a></footer>
     
 </body>
 
