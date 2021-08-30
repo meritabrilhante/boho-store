@@ -136,16 +136,16 @@ html$ += `
                         <p class="product-price">${product.price}</p>
                     </a>               
             </div>`
-            ))
+            )).join('')
         }
         </div>`;
         
     }
 
-    
-    
     document.getElementById("productscategories").innerHTML = html$;
 
+   /* Ir para a página de produto*/
+   
     function gotoproductpage (name, price, image, categoryname) {  
         const product = {
             name,
