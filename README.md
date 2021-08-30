@@ -21,6 +21,11 @@ Além disso, também foi criada uma newsletter, que armazena o email no localsto
 
 Para a responsividade foi utilizado os grids e tamanhos de containers do Bootstrap.<br>
 
+## 👩 Contributors 
+
+Isamara Galvão - Desenvolveu todo o HTML e estilizou o projeto com CSS;<br>
+Rita Brilhante - Desenvolveu a lógica e as funções Javascript; 
+
 ## 👨‍💻 Technologies
 
 - HTML
